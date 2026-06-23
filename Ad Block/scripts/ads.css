@@ -1,0 +1,15 @@
+/* William Ad Blocker — ads.css
+   All critical layout is inline in JS; this file is a safety net only. */
+
+.william-replacement {
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  position: relative !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.william-bg {
+  pointer-events: none;
+}
