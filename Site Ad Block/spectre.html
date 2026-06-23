@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spectre — Transformez vos publicités</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Spectre<span>.</span></div>
+    <div class="nav-links">
+      <a href="#how">Comment ça marche</a>
+      <a href="#features">Fonctionnalités</a>
+      <a href="#categories">Catégories</a>
+      <a href="#upcoming">Bientôt</a>
+    </div>
+    <button id="themeBtn" title="Changer de thème">☀️</button><button class="nav-cta">Installer — c'est gratuit</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Extension gratuite · Chrome &amp; Firefox
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line-ghost">Les publicités</span>
+        <span class="line-bright">réinventées.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Spectre ne bloque pas les pubs — il les <strong>transforme</strong>.<br/>
+        Chaque espace publicitaire devient une image que vous avez vraiment envie de voir.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn-primary">⬇ Installer Spectre</button>
+        <button class="btn-ghost">Voir comment ça marche</button>
+      </div>
+
+      <!-- HERO IMAGE -->
+      <div class="hero-visual">
+        <div class="scan-line"></div>
+        <img src="../Ad Block/images/icon48.png">
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="reveal">
+      <div class="section-label">// Comment ça fonctionne</div>
+      <h2 class="section-title">Simple.<br/>Puissant. Immédiat.</h2>
+      <p class="section-sub">Installez l'extension, ouvrez n'importe quelle page — Spectre fait le reste automatiquement.</p>
+    </div>
+
+    <div class="steps-row reveal">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-icon">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24">
+            <path d="M12 3v12M8 11l4 4 4-4M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Installation en 1 clic</h3>
+        <p>Ajoutez Spectre à votre navigateur depuis le Chrome Web Store ou Firefox Add-ons. Aucune configuration requise, aucun compte à créer.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-icon">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24">
+            <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Détection intelligente</h3>
+        <p>Spectre identifie automatiquement chaque espace publicitaire sur les pages que vous visitez, quelle que soit leur taille ou leur format.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-icon">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24">
+            <path d="M4.5 15.5l4 4 11-11M9 12l2 2 4-4" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Transformation instantanée</h3>
+        <p>Les publicités sont remplacées en temps réel par les images de votre choix. William, paysages, animaux… à vous de décider.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO TRANSFORM -->
+  <div id="demo-section" style="padding:0 40px 80px; max-width:1200px; margin:0 auto;">
+    <div class="reveal">
+      <div class="section-label" style="text-align:center">// La différence</div>
+      <h2 class="section-title" style="text-align:center">Avant — Après.</h2>
+    </div>
+
+    <div class="transform-demo reveal">
+      <div class="demo-card">
+        <div class="demo-label bad">
+          <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="#F87171"/></svg>
+          SANS SPECTRE
+        </div>
+        <div class="demo-body-bad">
+          <div class="page-line" style="width:80%"></div>
+          <div class="page-line" style="width:60%"></div>
+          <div class="ad-placeholder">
+            ⬛ PUBLICITÉ<br/><span style="opacity:.5">Espace vide ou intrusif</span>
+          </div>
+          <div class="page-line" style="width:90%"></div>
+          <div class="page-line" style="width:50%"></div>
+        </div>
+      </div>
+
+      <div class="arrow-transform">
+        <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7" stroke="#A855F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="arrow-label">SPECTRE</span>
+      </div>
+
+      <div class="demo-card">
+        <div class="demo-label good">
+          <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="#A855F7"/></svg>
+          AVEC SPECTRE
+        </div>
+        <div class="demo-body-good">
+          <div class="page-line" style="width:80%;background:rgba(168,85,247,.12)"></div>
+          <div class="page-line" style="width:60%;background:rgba(168,85,247,.08)"></div>
+          <div class="spectre-fill">
+            <div class="spectre-fill-icon">🌄</div>
+            Image de votre choix
+          </div>
+          <div class="page-line" style="width:90%;background:rgba(168,85,247,.12)"></div>
+          <div class="page-line" style="width:50%;background:rgba(168,85,247,.08)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="features-header reveal">
+      <div>
+        <div class="section-label">// Fonctionnalités</div>
+        <h2 class="section-title">Pensé pour<br/>vous plaire.</h2>
+        <p class="section-sub">Une expérience complète et personnalisable, conçue pour rendre chaque navigation agréable.</p>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="feat-grid reveal">
+      <div class="feat-card">
+        <div class="feat-icon">👑</div>
+        <h4>William, la mascotte</h4>
+        <p>Par défaut, William — étudiant charismatique devenu icône du projet — remplace vos pubs avec son charme légendaire.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">⚡</div>
+        <h4>Remplacement temps réel</h4>
+        <p>Les espaces publicitaires sont transformés instantanément, sans ralentir votre navigation ni modifier le contenu des pages.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔒</div>
+        <h4>100% gratuit &amp; privé</h4>
+        <p>Spectre est open-source, gratuit pour toujours, sans collecte de données. Votre navigation reste strictement personnelle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="categories">
+    <div class="reveal">
+      <div class="section-label">// Bibliothèque d'images</div>
+      <h2 class="section-title">Votre feed,<br/>votre vibe.</h2>
+      <p class="section-sub" style="margin:0 auto">Choisissez la catégorie qui vous ressemble — ou mixez-les toutes.</p>
+    </div>
+
+    <div class="cat-grid reveal">
+      <div class="cat-pill featured">
+        <span class="cat-emoji">😎</span>
+        <span class="cat-name">William</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">🏔</span>
+        <span class="cat-name">Paysages</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">🐾</span>
+        <span class="cat-name">Animaux</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">🎨</span>
+        <span class="cat-name">Art</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">😂</span>
+        <span class="cat-name">Mèmes</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">🚀</span>
+        <span class="cat-name">Space</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">🌸</span>
+        <span class="cat-name">Nature</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">🏙</span>
+        <span class="cat-name">Urbain</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">🎮</span>
+        <span class="cat-name">Gaming</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">🍜</span>
+        <span class="cat-name">Nourriture</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">✨</span>
+        <span class="cat-name">Minimaliste</span>
+      </div>
+      <div class="cat-pill">
+        <span class="cat-emoji">🎭</span>
+        <span class="cat-name">Cinéma</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING -->
+  <div id="upcoming">
+    <div class="upcoming-card reveal">
+      <div>
+        <span class="tag-coming">BIENTÔT DISPONIBLE</span>
+        <h2>Vos propres<br/>photos. Enfin.</h2>
+        <p>La prochaine mise à jour permettra d'importer vos propres images depuis votre galerie personnelle. Créez des collections sur-mesure et choisissez exactement ce que vous voulez voir à la place des publicités.</p>
+      </div>
+      <div class="mock-gallery">
+        <div class="mock-thumb">🏖</div>
+        <div class="mock-thumb">🐶</div>
+        <div class="mock-thumb">👨‍👩‍👦</div>
+        <div class="mock-thumb" style="font-size:14px">+ Ajouter</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA FINAL -->
+  <div id="cta-final" class="reveal">
+    <h2>Arrêtez de subir.<br/>Commencez à choisir.</h2>
+    <p>Gratuit. Instantané. Aucun compte requis.</p>
+    <button class="btn-primary" style="font-size:16px; padding:18px 40px">
+      ⬇ Installer Spectre gratuitement
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Spectre.</div>
+    <p>© 2025 Spectre — Extension gratuite et open-source</p>
+    <p style="opacity:.3; font-family:'JetBrains Mono',monospace; font-size:11px;">v1.0</p>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Theme toggle
+    const themeBtn = document.getElementById('themeBtn');
+    themeBtn.addEventListener('click', () => {
+      const isLight = document.body.classList.toggle('light-mode');
+      themeBtn.textContent = isLight ? '🌙' : '☀️';
+    });
+  </script>
+</body>
+</html>
