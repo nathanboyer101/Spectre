@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+
+  "name": "William Ad Blocker",
+  "version": "1.67",
+  "description": "Replaces ads with custom images.",
+
+  "permissions": [
+    "storage",
+    "declarativeNetRequest"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"],
+      "css": ["scripts/ads.css"],
+      "run_at": "document_start"
+    }
+  ],
+
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
