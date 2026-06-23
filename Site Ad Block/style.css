@@ -1,17 +1,19 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --violet:     #6B21A8;
-      --violet-mid: #7C3AED;
-      --violet-glow:#A855F7;
-      --night:      #0F1929;
-      --night-2:    #151F30;
-      --night-3:    #1E2D45;
-      --metal:      #94A3B8;
-      --metal-light:#CBD5E1;
-      --snow:       #F1F5F9;
-      --white:      #FFFFFF;
-      --radius:     16px;
+      --violet: #7C3AED;
+      --violet-mid: #9333EA;
+      --violet-glow: #C084FC;
+    
+      --night: #050816;
+      --night-2: #0A1220;
+      --night-3: #101B2E;
+    
+      --metal: #C7D2E0;
+      --metal-light: #E2E8F0;
+    
+      --snow: #FFFFFF;
+      --white: #FFFFFF;
     }
 
     html { scroll-behavior: smooth; }
