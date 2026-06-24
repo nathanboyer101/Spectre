@@ -4,35 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spectre — Transformez vos publicités</title>
+  <meta name="description" content="Spectre ne bloque pas les pubs — il les transforme. Chaque espace publicitaire devient une image que vous avez vraiment envie de voir." />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- NAV -->
-  <nav>
+  <nav id="nav">
     <div class="nav-logo">W-Spectre<span>.</span></div>
     <div class="nav-links">
       <a href="#how">Comment ça marche</a>
       <a href="#features">Fonctionnalités</a>
-      <a href="#upcoming">Bientôt</a>
+      <a href="#upcoming">À venir</a>
     </div>
-    <button id="themeBtn" title="Changer de thème">☀️</button>
-    <button class="nav-cta" onclick="window.open('https://raw.githubusercontent.com/nathanboyer101/Spectre/main/Site%20Ad%20Block/WilliamAdBlock.zip', '_blank')">Installer — c'est gratuit</button>
+    <div class="nav-right">
+      <button id="themeBtn" title="Changer de thème" aria-label="Basculer le thème clair/sombre">☀️</button>
+      <button class="nav-cta" onclick="window.open('https://raw.githubusercontent.com/nathanboyer101/Spectre/main/Site%20Ad%20Block/WilliamAdBlock.zip','_blank')">Installer — gratuit</button>
+    </div>
   </nav>
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
 
     <div class="hero-content">
       <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Extension gratuite · Chrome &amp; Firefox
+        <span class="badge-dot" aria-hidden="true"></span>
+        Extension gratuite &middot; Chrome &amp; Firefox Android
       </div>
 
       <h1 class="hero-title">
@@ -41,19 +44,39 @@
       </h1>
 
       <p class="hero-sub">
-        Spectre ne bloque pas les pubs — il les <strong>transforme</strong>.<br/>
-        Chaque espace publicitaire devient une image que vous avez vraiment envie de voir.
+        Spectre ne bloque pas les pubs&nbsp;&mdash;&nbsp;il les <strong>transforme</strong>.<br/>
+        Chaque espace publicitaire devient une image que vous choisissez vraiment.
       </p>
 
+      <!-- STATS ROW -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="50">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">domaines bloqués</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">open-source &amp; gratuit</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="2">0</span><span class="stat-unit">x</span>
+          <span class="stat-label">navigateurs supportés</span>
+        </div>
+      </div>
+
       <div class="hero-actions">
-        <button class="btn-primary" onclick="window.open('https://raw.githubusercontent.com/nathanboyer101/Spectre/main/Site%20Ad%20Block/WilliamAdBlock.zip', '_blank')">⬇ Installer Spectre</button>
+        <button class="btn-primary" onclick="window.open('https://raw.githubusercontent.com/nathanboyer101/Spectre/main/Site%20Ad%20Block/WilliamAdBlock.zip','_blank')">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Installer Spectre
+        </button>
         <a href="#how"><button class="btn-ghost">Voir comment ça marche</button></a>
       </div>
 
-      <!-- HERO IMAGE -->
-      <div class="hero-visual">
-        <div class="scan-line"></div>
-        <img src="logo_adblock.png"  alt="Logo du Spectre AdBlocker : Buste de William derrière un bouclier transparent. En dessous, le titre de la marque "Spectre ADBLOCKER"" style="width:100%;display:block;border-radius:18px;" />
+      <div class="hero-visual" aria-label="Logo Spectre AdBlocker">
+        <div class="scan-line" aria-hidden="true"></div>
+        <img src="logo_adblock.png" alt="Logo Spectre AdBlocker : buste de William derrière un bouclier transparent avec l'inscription Spectre ADBLOCKER" style="width:100%;display:block;border-radius:18px;" />
       </div>
     </div>
   </section>
@@ -68,72 +91,64 @@
 
     <div class="steps-row reveal">
       <div class="step">
-        <div class="step-num">01</div>
-        <div class="step-icon">
-          <svg width="22" height="22" fill="none" aria-label="Icone de téléchargement" viewBox="0 0 24 24">
-            <path d="M12 3v12M8 11l4 4 4-4M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+        <div class="step-num" aria-hidden="true">01</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M12 3v12M8 11l4 4 4-4M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3>Installation en 1 clic</h3>
-        <p>Ajoutez Spectre à votre navigateur depuis le Chrome Web Store ou Firefox Add-ons. Aucune configuration requise, aucun compte à créer.</p>
+        <p>Téléchargez Spectre et ajoutez-le à Chrome ou Firefox en quelques secondes. Aucun compte, aucune configuration, aucune donnée collectée.</p>
       </div>
       <div class="step">
-        <div class="step-num">02</div>
-        <div class="step-icon">
-          <svg width="22" height="22" aria-label="Icone "check"" fill="none" viewBox="0 0 24 24">
-            <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+        <div class="step-num" aria-hidden="true">02</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3>Détection intelligente</h3>
-        <p>Spectre identifie automatiquement chaque espace publicitaire sur les pages que vous visitez, quelle que soit leur taille ou leur format.</p>
+        <p>Plus de 50 domaines publicitaires bloqués au niveau réseau. Spectre repère aussi les espaces vides laissés par d'autres bloqueurs sur des sites comme Allociné ou 20 Minutes.</p>
       </div>
       <div class="step">
-        <div class="step-num">03</div>
-        <div class="step-icon">
-          <svg width="22" height="22" fill="none" aria-label="Icone "Validé"" viewBox="0 0 24 24">
-            <path d="M4.5 15.5l4 4 11-11M9 12l2 2 4-4" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+        <div class="step-num" aria-hidden="true">03</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M4.5 15.5l4 4 11-11" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3>Transformation instantanée</h3>
-        <p>Les publicités sont remplacées en temps réel par les images de votre choix. William, paysages, animaux… à vous de décider.</p>
+        <p>Chaque emplacement publicitaire est remplacé en temps réel par l'image de votre choix — avec un effet de fond flouté pour un rendu soigné quelle que soit la taille du slot.</p>
       </div>
     </div>
   </section>
 
   <!-- DEMO TRANSFORM -->
-  <div id="demo-section" style="padding:0 40px 80px; max-width:1200px; margin:0 auto;">
-    <div class="reveal">
-      <div class="section-label" style="text-align:center">// La différence</div>
-      <h2 class="section-title" style="text-align:center">Avant — Après.</h2>
+  <div id="demo-section">
+    <div class="reveal" style="text-align:center">
+      <div class="section-label">// La différence</div>
+      <h2 class="section-title">Avant — Après.</h2>
     </div>
 
     <div class="transform-demo reveal">
       <div class="demo-card">
         <div class="demo-label bad">
-          <svg width="10" height="10" aria-label="Point circulaire rouge" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="#F87171"/></svg>
+          <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="#F87171"/></svg>
           SANS SPECTRE
         </div>
         <div class="demo-body-bad">
           <div class="page-line" style="width:80%"></div>
           <div class="page-line" style="width:60%"></div>
           <div class="ad-placeholder">
-            ⬛ PUBLICITÉ<br/><span style="opacity:.5">Espace vide ou intrusif</span>
+            ⬛ PUBLICITÉ<br/><span>Intrusif &middot; Distrayant &middot; Inutile</span>
           </div>
           <div class="page-line" style="width:90%"></div>
           <div class="page-line" style="width:50%"></div>
         </div>
       </div>
 
-      <div class="arrow-transform">
-        <svg width="32" height="32" aria-label="Flèche magenta qui va d'avant en arrière vers la droite" fill="none" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7" stroke="#A855F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+      <div class="arrow-transform" aria-hidden="true">
+        <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="#A855F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span class="arrow-label">SPECTRE</span>
       </div>
 
       <div class="demo-card">
         <div class="demo-label good">
-          <svg width="10" height="10" aria-label="Point circulaire magenta" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="#A855F7"/></svg>
+          <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="#A855F7"/></svg>
           AVEC SPECTRE
         </div>
         <div class="demo-body-good">
@@ -141,7 +156,7 @@
           <div class="page-line" style="width:60%;background:rgba(168,85,247,.08)"></div>
           <div class="spectre-fill">
             <div class="spectre-fill-icon">🌄</div>
-            Image de votre choix
+            Votre image. Votre choix.
           </div>
           <div class="page-line" style="width:90%;background:rgba(168,85,247,.12)"></div>
           <div class="page-line" style="width:50%;background:rgba(168,85,247,.08)"></div>
@@ -158,40 +173,45 @@
         <h2 class="section-title">Pensé pour<br/>vous plaire.</h2>
         <p class="section-sub">Une expérience complète et personnalisable, conçue pour rendre chaque navigation agréable.</p>
       </div>
-      <div></div>
     </div>
 
     <div class="feat-grid reveal">
       <div class="feat-card">
-        <div class="feat-icon">👑</div>
-        <h4>William, la mascotte</h4>
-        <p>Par défaut, William — étudiant charismatique devenu icône du projet — remplace vos pubs avec son charme légendaire.</p>
+        <div class="feat-icon" aria-hidden="true">🖼️</div>
+        <h4>Vos images, vos règles</h4>
+        <p>Importez vos propres photos par fichier ou par lien URL. Gérez une galerie personnelle et activez ou désactivez chaque image en un clic.</p>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">⚡</div>
+        <div class="feat-icon" aria-hidden="true">⚖️</div>
+        <h4>Fréquence personnalisée</h4>
+        <p>Mode équitable ou personnalisé : attribuez un poids de 1 à 5 étoiles à chaque image pour qu'elle apparaisse plus ou moins souvent.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon" aria-hidden="true">⚡</div>
         <h4>Remplacement temps réel</h4>
-        <p>Les espaces publicitaires sont transformés instantanément, sans ralentir votre navigation ni modifier le contenu des pages.</p>
+        <p>Les espaces publicitaires sont détectés et transformés instantanément, avec fond flouté pour un rendu soigné quelle que soit la proportion du slot.</p>
       </div>
       <div class="feat-card">
-        <div class="feat-icon">🔒</div>
+        <div class="feat-icon" aria-hidden="true">🔒</div>
         <h4>100% gratuit &amp; privé</h4>
-        <p>Spectre est open-source, gratuit pour toujours, sans collecte de données. Votre navigation reste strictement personnelle.</p>
+        <p>Open-source, sans collecte de données, sans compte requis. Vos images restent stockées localement sur votre appareil.</p>
       </div>
     </div>
   </section>
+
   <!-- UPCOMING -->
   <div id="upcoming">
     <div class="upcoming-card reveal">
-      <div>
+      <div class="upcoming-text">
         <span class="tag-coming">BIENTÔT DISPONIBLE</span>
-        <h2>Vos propres<br/>photos. Enfin.</h2>
-        <p>La prochaine mise à jour permettra d'importer vos propres images depuis votre galerie personnelle. Créez des collections sur-mesure et choisissez exactement ce que vous voulez voir à la place des publicités.</p>
+        <h2>Safari iOS.<br/>Dans votre poche.</h2>
+        <p>La prochaine version apportera la compatibilité Safari sur iPhone et iPad. Même expérience, même personnalisation — partout où vous naviguez.</p>
       </div>
-      <div class="mock-gallery">
-        <div class="mock-thumb">🏖</div>
-        <div class="mock-thumb">🐶</div>
-        <div class="mock-thumb">👨‍👩‍👦</div>
-        <div class="mock-thumb" style="font-size:14px">+ Ajouter</div>
+      <div class="mock-gallery" aria-hidden="true">
+        <div class="mock-thumb">📱</div>
+        <div class="mock-thumb">🍎</div>
+        <div class="mock-thumb">🛡️</div>
+        <div class="mock-thumb add-thumb">+ Bientôt</div>
       </div>
     </div>
   </div>
@@ -200,29 +220,18 @@
   <div id="cta-final" class="reveal">
     <h2>Arrêtez de subir.<br/>Commencez à choisir.</h2>
     <p>Gratuit. Instantané. Aucun compte requis.</p>
-    <button class="btn-primary" style="font-size:16px; padding:18px 40px" onclick="window.open('https://raw.githubusercontent.com/nathanboyer101/Spectre/main/Site%20Ad%20Block/WilliamAdBlock.zip', '_blank')">⬇ Installer Spectre Gratuitement</button>
+    <button class="btn-primary btn-large" onclick="window.open('https://raw.githubusercontent.com/nathanboyer101/Spectre/main/Site%20Ad%20Block/WilliamAdBlock.zip','_blank')">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Installer Spectre Gratuitement
+    </button>
   </div>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-logo">Spectre.</div>
-    <p>© 2025 Spectre — Extension gratuite et open-source</p>
-    <p style="opacity:.3; font-family:'JetBrains Mono',monospace; font-size:11px;">v1.0</p>
+    <p>© 2025 Spectre — Extension open-source &amp; gratuite</p>
+    <p class="footer-version">v5.0</p>
   </footer>
-
-  <script>
-    // Scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); } });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // Theme toggle
-    const themeBtn = document.getElementById('themeBtn');
-    themeBtn.addEventListener('click', () => {
-      const isLight = document.body.classList.toggle('light-mode');
-      themeBtn.textContent = isLight ? '🌙' : '☀️';
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
