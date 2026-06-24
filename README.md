@@ -15,7 +15,7 @@ Elle bloque automatiquement les publicités, remplace les espaces publicitaires 
 
 ## 📸 Aperçu
 
-![Spectre](Ad Block/images/icon128.png)
+![Spectre](Ad%20Block/images/icon128.png)
 
 ## 📦 Installation
 
