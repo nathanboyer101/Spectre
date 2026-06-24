@@ -73,4 +73,4 @@ Projet distribué sous licence MIT.
 
 ---
 
-Développé par Nathan Boyer.
+Développé par Nathan, Sofiane, Paul, Leedan et Neela.
