@@ -1,6 +1,6 @@
 # 👻 Spectre
 
-**Spectre** est une extension de navigateur open-source conçue pour rendre le web plus propre et plus agréable à utiliser.
+**Willi Blocker** est une extension de navigateur open-source conçue pour rendre le web plus propre et plus agréable à utiliser.
 
 Elle bloque automatiquement les publicités, remplace les espaces publicitaires par du contenu visuel personnalisé et tente de contourner certaines détections anti-adblock afin d'améliorer l'expérience de navigation.
 
