@@ -67,6 +67,12 @@ Les contributions sont les bienvenues.
 3. Effectuez vos modifications
 4. Ouvrez une Pull Request
 
+## ❤️ Soutenir Spectre
+
+Si Spectre vous aide à naviguer sans publicité, vous pouvez soutenir son développement :
+
+[Faire un don](https://ko-fi.com/brinks)
+
 ## 📝 Licence
 
 Projet distribué sous licence MIT.
