@@ -71,7 +71,7 @@ Les contributions sont les bienvenues.
 
 Si Spectre vous aide à naviguer sans publicité, vous pouvez soutenir son développement :
 
-[Faire un don](https://ko-fi.com/brinks)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5G72221R2)
 
 ## 📝 Licence
 
