@@ -1,21 +1,27 @@
 {
   "manifest_version": 3,
-
-  "name": "William Ad Blocker",
+  "name": "Willi Blocker",
   "version": "1.67",
-  "description": "Replaces ads with custom images.",
+  "description": "Remplace les publicités par tes propres images.",
 
-  "permissions": [
-    "storage",
-    "declarativeNetRequest"
-  ],
+  "permissions": ["storage", "declarativeNetRequest"],
+  "host_permissions": ["<all_urls>"],
 
-  "host_permissions": [
-    "<all_urls>"
-  ],
+  "icons": {
+    "16":  "images/icon16.png",
+    "32":  "images/icon32.png",
+    "48":  "images/icon48.png",
+    "128": "images/icon128.png"
+  },
 
   "action": {
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16":  "images/icon16.png",
+      "32":  "images/icon32.png",
+      "48":  "images/icon48.png",
+      "128": "images/icon128.png"
+    }
   },
 
   "background": {
@@ -33,11 +39,7 @@
 
   "declarative_net_request": {
     "rule_resources": [
-      {
-        "id": "rules",
-        "enabled": true,
-        "path": "rules.json"
-      }
+      { "id": "rules", "enabled": true, "path": "rules.json" }
     ]
   },
 
