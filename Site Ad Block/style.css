@@ -825,9 +825,76 @@ body.light-mode .kofi-top        { background: #F1F5F9; }
 body.light-mode .kofi-name       { color: #1E1B4B; }
 body.light-mode .kofi-amount     { background: #F1F5F9; }
 
-/* Responsive */
+/* Ko-fi support-right column */
+.support-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* kofi-support-btn is an <a> tag — reset + style */
+a.kofi-support-btn {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(135deg, #FF5E5B, #FF8A7A);
+  color: #fff; border-radius: 8px;
+  padding: 10px 24px; font-size: 14px; font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-top: 6px; cursor: pointer;
+  transition: opacity .2s;
+}
+a.kofi-support-btn:hover { opacity: .88; }
+
+/* Ko-fi amounts interactive */
+.kofi-amount { cursor: pointer; }
+.kofi-amount:hover {
+  background: rgba(255,94,91,.1);
+  border-color: rgba(255,94,91,.4);
+  color: #FF7B78;
+}
+
+/* installation section */
+#installation {
+  max-width: 1200px; margin: 0 auto; padding: 100px 40px;
+}
+.install-steps {
+  margin-top: 60px;
+  display: flex; flex-direction: column; gap: 0;
+}
+.install-line-hidden { opacity: 0; }
+
+/* upcoming-text left column */
+.upcoming-text { display: flex; flex-direction: column; }
+
+/* Nav active link */
+.nav-links a.nav-active { color: var(--snow); }
+body.light-mode .nav-links a.nav-active { color: #1E1B4B; }
+
+/* code inline */
+code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  background: rgba(168,85,247,.12);
+  border: 1px solid rgba(168,85,247,.2);
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: #C4B5FD;
+}
+body.light-mode code {
+  background: rgba(109,40,217,.08);
+  border-color: rgba(109,40,217,.2);
+  color: #6D28D9;
+}
+
+/* Ko-fi support responsive */
 @media (max-width: 900px) {
   #support { padding: 0 24px 80px; }
   .support-card { grid-template-columns: 1fr; padding: 40px 28px; gap: 40px; }
   .support-left h2 { font-size: 28px; }
+  #installation { padding: 70px 24px; }
 }
+
+/* light mode install section */
+body.light-mode #installation .section-title { color: #1E1B4B; }
+body.light-mode .install-success { background: rgba(109,40,217,.07); border-color: rgba(109,40,217,.2); color: #6D28D9; }
