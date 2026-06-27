@@ -38,7 +38,7 @@ L'extension n'est pas encore publiée sur les stores Chromium.
 
 En attendant :
 
-1. Clonez ou téléchargez ce dépôt.
+1. Clonez / Téléchargez ce dépôt / Téléchargez le .zip depuis notre site
 2. Ouvrez la page des extensions :
    - Chrome : `chrome://extensions`
    - Edge : `edge://extensions`
