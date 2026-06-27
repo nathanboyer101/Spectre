@@ -8,7 +8,10 @@ const DEFAULT_IMAGES = [
   "images/default5.jpg",
   "images/default6.jpg",
   "images/default7.jpg",
-  "images/default8.jpg"
+  "images/default8.jpg",
+  "images/default9.jpg",
+  "images/default10.jpg",
+  "images/default11.jpg"
 ];
 
 chrome.runtime.onInstalled.addListener(() => {
