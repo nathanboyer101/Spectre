@@ -28,10 +28,6 @@ Elle bloque automatiquement les publicités, remplace les espaces publicitaires 
 
 Installez directement Willi Blocker depuis le catalogue officiel Mozilla :
 
-👉 **https://addons.mozilla.org/fr/firefox/addon/williblocker/**
-
-Ou cliquez sur le badge :
-
 [![Firefox Add-ons](https://blog.mozilla.org/addons/files/2015/11/get-the-addon.png)](https://addons.mozilla.org/fr/firefox/addon/williblocker/)
 
 ---
